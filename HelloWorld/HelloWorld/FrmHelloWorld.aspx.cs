@@ -13,5 +13,10 @@ namespace HelloWorld
         {
 
         }
+
+        protected void bntClick_Click(object sender, EventArgs e)
+        {
+            labName.Text = txtDisplay.Text;
+        }
     }
 }
