@@ -101,12 +101,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FrmHelloWorld.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="FrmHelloWorld.aspx.cs">
+      <DependentUpon>FrmHelloWorld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHelloWorld.aspx.designer.cs">
+      <DependentUpon>FrmHelloWorld.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
