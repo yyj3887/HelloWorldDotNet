@@ -11,12 +11,17 @@ namespace HelloWorld
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Expires = -1;
+            Response.Buffer = true;
+            Response.Write("안녕하세요?");
+            Response.Write("그랬어요?");
         }
 
         protected void bntClick_Click(object sender, EventArgs e)
         {
             labName.Text = txtDisplay.Text;
+            txtDisplay.Text = "";
+            Response.Write("반갑습니다.");
         }
     }
 }
